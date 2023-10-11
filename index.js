@@ -341,6 +341,81 @@
 
 //  console.log (capitalizer(strrA, strrB))
 
+// function GreatingName(Greeting){
+//     let Great = "Good morning"  + " " + Greeting 
+//     return Great;
+// }
+
+// console.log(GreatingName("Bashir"));
+
+//loop
+// for (let i = 0; i < 10, i++) {}
+// while
+
+// let sentence = "new sentences"
+
+// function iterably(str1){
+  
+//     return fi;
+//  }
+
+
+//   let str1 = "the quick brown fox"
+
+//  function charcteOfInterest (str1){
+//     for ( i = 0; i < str1.length; i++) {
+//         let output = str1[i]
+//         console.log(output);
+//  }
+//  return output
+//    }
+//  charcteOfInterest ("the quick brown fox")
+ 
+// let str1 = "the quick brown fox"
+// let str3 = " "
+// for (let i = 0; i < str1.length; i++) {
+//     let nestWord = str1[0].toUpperCase() + str1.slice(1, str1.indexOf(" "))
+//     str3 = str3 + nestWord
+//     str1 = str1.slice(nestWord.length)
+// }
+
+
+
+//Assignment
+
+// function checkAnagrams(s, t) {
+//   if (s.length !== t.length) {
+//     console.log(false);  // Anagrams must have the same length
+//     return;
+//   }
+//   for (let i = 0; i < s.length  ; i++) {
+//     if (s.includes(t[i]) && t.includes(s[i]))  {
+//          console.log(true);
+//     }else 
+//     console.log(false);
+// }
+//   }
+
+
+// // Example usage
+// const s = "atae";
+// const t = "tea";
+// checkAnagrams(s, t);
+
+
+
+function checkAnagrams (s, t) {
+    for (let i = 0; i < s.length; i++) {
+        if (s.length === t.length &&  s.includes(t[i])) {  
+           return true
+        }
+        else{
+            return false
+        }
+}
+}
+//correction
+console.log(checkAnagrams("atea","eeat"));
 
 
 

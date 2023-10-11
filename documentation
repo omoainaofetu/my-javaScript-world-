@@ -1,0 +1,138 @@
+//strings method in javascript
+/*
+1. length
+Returns the length (number of characters) of a string.
+
+const myString = "Hello, world!";
+console.log(myString.length);  // Output: 13
+
+2. toUpperCase() and toLowerCase()
+toUpperCase(): Converts all characters in a string to uppercase.
+toLowerCase(): Converts all characters in a string to lowercase.
+
+const myString = "Hello, World!";
+console.log(myString.toUpperCase());  // Output: "HELLO, WORLD!"
+console.log(myString.toLowerCase());  // Output: "hello, world!"
+
+3. trim()
+Removes leading and trailing whitespace from a string
+
+const myString = "  Hello, World!  ";
+console.log(myString.trim());  // Output: "Hello, World!"
+
+
+4. replace()
+Replaces occurrences of a specified substring within the string with another substring.
+
+const myString = "Hello, World!";
+const newString = myString.replace("Hello", "Hi");
+console.log(newString);  // Output: "Hi, World!"
+
+5. indexOf() and lastIndexOf()
+
+indexOf(): Returns the index of the first occurrence of a specified substring within the string. If not found, returns -1.
+lastIndexOf(): Returns the index of the last occurrence of a specified substring within the string. If not found, returns -1.
+
+const myString = "Hello, World!";
+console.log(myString.indexOf("World"));  // Output: 7
+console.log(myString.lastIndexOf("World"));  // Output: 7
+
+
+6. Strings:
+
+Syntax: string.slice(start, end)
+start (optional): The starting index (inclusive). If omitted, starts from index 0.
+end (optional): The ending index (exclusive). If omitted, ends at the last character.
+Example with Strings:
+
+const str = 'Hello, world!';
+
+const slicedStr = str.slice(7, 12);  // Extracts characters from index 7 to 11
+console.log(slicedStr);  // Output: 'world'
+
+const slicedStr2 = str.slice(7);  // Extracts characters from index 7 to the end
+console.log(slicedStr2);  // Output: 'world!'
+
+
+// Example: Concatenate strings
+const firstName = "John";
+const lastName = "Doe";
+const fullName = `${firstName} ${lastName}`;
+console.log(fullName);  // Output: "John Doe"
+
+// Example: Formatting strings
+const age = 30;
+const formattedString = `My name is ${firstName} and I am ${age} years old.`;
+console.log(formattedString);  // Output: "My name is John and I am 30 years old."
+
+// Example: Checking substring in a string
+const sentence = "The quick brown fox jumps over the lazy dog";
+console.log(sentence.includes("fox"));  // Output: true
+console.log(sentence.includes("cat"));  // Output: false 
+
+
+
+In JavaScript, logical operators are used to perform logical operations on operands, typically boolean values, and produce a resulting boolean value. There are three primary logical operators: && (logical AND), || (logical OR), and ! (logical NOT).
+
+Let's delve into each logical operator with a detailed explanation:
+
+1. Logical AND (&&):
+The && operator is used to perform a logical AND operation. It returns true if both operands are true, and false otherwise.
+
+Syntax: operand1 && operand2
+
+Explanation:
+
+If operand1 is false, the result is false (short-circuiting).
+If operand1 is true, the result is the value of operand2.
+Example:
+
+javascript
+
+console.log(true && true);    // Output: true
+console.log(true && false);   // Output: false
+console.log(false && true);   // Output: false
+console.log(false && false);  // Output: false
+
+2. Logical OR (||):
+The || operator is used to perform a logical OR operation. It returns true if at least one operand is true, and false if both operands are false.
+
+Syntax: operand1 || operand2
+
+Explanation:
+
+If operand1 is true, the result is true (short-circuiting).
+If operand1 is false, the result is the value of operand2.
+Example:
+
+javascript
+Copy code
+console.log(true || true);    // Output: true
+console.log(true || false);   // Output: true
+console.log(false || true);   // Output: true
+console.log(false || false);  // Output: false
+
+3. Logical NOT (!):
+The ! operator is used to perform a logical NOT operation. It negates the operand - if it's true, the result is false, and if it's false, the result is true.
+
+Syntax: !operand
+
+Explanation:
+
+If operand is true, the result is false.
+If operand is false, the result is true.
+
+Example:
+console.log(true && true);    // Output: true
+console.log(true && false);   // Output: false
+console.log(false && true);   // Output: false
+console.log(false && false);  // Output: false
+
+
+
+
+
+
+
+
+*/
