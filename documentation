@@ -129,10 +129,9 @@ console.log(false && true);   // Output: false
 console.log(false && false);  // Output: false
 
 
-
-
-
-
-
-
+Nexted loop
+complexity remind abu
 */
+
+
+

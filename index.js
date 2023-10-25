@@ -183,6 +183,8 @@
 // let  num = "CCXCV"
 // let output = 0
 
+
+
 // //charcter1
 // function convertNum(pr1, pr2, pr3, pr4, pr5) { 
 //   if (num[0] =="C") {
@@ -402,20 +404,228 @@
 // const t = "tea";
 // checkAnagrams(s, t);
 
+// correction for assignment
+
+// function checkAnagrams(s, t) {
+//       if (s.length !== t.length) {
+//           // Anagrams must have the same length
+//         return false
+//       }
+//       for (let i = 0; i < s.length ; i++) {
+//         for (let i = 0; j < t.length ; j++) {
+//         if (s[i] == t[j]) {
+//             t=t.replace(t[j],"")
+//             break;
+//         }
+//     }
+// }
+// if (t.length == 0) {
+//          return true
+//      }else  {
+//         return false
+//       }
+
+//       }
 
 
-function checkAnagrams (s, t) {
-    for (let i = 0; i < s.length; i++) {
-        if (s.length === t.length &&  s.includes(t[i])) {  
-           return true
+
+// let array1 = ["Afica", "America", "Asia", ["Nig", "SA", "Egy", "Ken", ['Lag', 'Abj', 'PH'], ["J'borg"], 'Mar', ['Rabat', "Marakech"]]]
+// //Marakech is in Mar not in Egy and is bigger than PH. Lag is bigger than most cities in Asia.
+
+// let cities = `${array1[3][7][1]} is in ${array1[3][6]} not in ${array1[3][2]} and is bigger than ${array1[3][4][2]}. ${array1[3][4] [0]} is bigger than most cities in ${array1[2]}` 
+// console.log(cities)
+
+// let names = ["fola", "funso", "mj", "frank", "semiu"]
+// let scores = [45, 78, 89, 67, 99]
+
+// //Output:   fola: 45
+//  //         funso: 78
+//  //         mj: 89
+//  //        frank: 76
+//  //         semiu: 99
+
+// let nameScore = `${names[0]}: ${scores[0]} 
+// ${names[1]}: ${scores[1]}
+// ${names[2]}: ${scores[2]}
+// ${names[3]}: ${scores[3]}
+// ${names[4]}: ${scores[4]}`
+// console.log(nameScore);
+
+//my solution
+// let strings = "{";
+
+// function stringsChar() {
+// if ( strings[0] === "{"  && strings[1] ==="}") {
+//     console.log(true);
+//   }else if ( strings[0] === "{"  && strings[1] !="}") {
+//     console.log(false);
+//   }
+// else if( strings[0] === "("  && strings[1] ===")"){
+//    console.log(true);
+//  }
+// else if( strings[0] === "("  && strings[1] !=")"){
+//     console.log(false);
+//  }
+//  else if( strings[0] === "["  && strings[1] ==="]"){
+//    console.log(true);
+//  }
+//  else if( strings[0] === "["  && strings[1] !="]"){
+//     console.log(false);
+//   }
+//   return strings;
+// }
+// console.log(stringsChar(strings));
+
+//Correction
+// const isvalid = function(s){
+//     let count = 0
+//     if (s.length % 2 !== 0){
+//         return false
+//     }
+//     else {
+//         for (let i = 0; i < s.length; i+=2){
+//             if ((s[i]=="[" && s[i+1] == "]") ||(s[i]=="(" && s[i+1] == ")") ||(s[i]=="{" && s[i+1] == "}"))
+//             pair ++
+//         }
+//         if (pair === s.length/2) return true
+//         else return false
+//     }
+// }
+
+
+//how to make use of more than a strings
+// let tree = {
+//     height: 110,
+//     color: 'green',
+//     grow() {
+//         this.height += 2;
+//     }
+// };
+// tree.grow();
+// console.log(tree.height);
+
+// let prop = 'name';
+// let id = '1234'
+// let mobile = '08111'
+
+// let user = {
+//     [prop]: 'jack',
+//     [`user_${id}`] : `${mobile}`
+// }
+
+// console.log(user.name);
+// console.log(user.user_1234);
+
+
+
+//3
+// function checkAnagrams(s, t) {
+//           if (s.length !== t.length) {
+//               // Anagrams must have the same length
+//             return false
+//           }
+//           for (let i = 0; i < s.length ; i++) {
+//             for (let i = 0; j < t.length ; j++) {
+//             if (s[i] == t[j]) {
+//                 t=t.replace(t[j],"")
+//                 break;
+//             }
+//         }
+//     }
+//     if (t.length == 0) {
+//              return true
+//          }else  {
+//             return false
+//           }
+    
+//           }
+
+
+
+
+
+// //class work
+
+// //define an empty array
+// let arr1 = []
+
+// // put some elements in the array
+// arr1.push(1,2,3,4,5,6,7)
+
+// //remove some elements from the array and add them to another array
+// let poopeditems = []
+// poopeditems.push(arr1.pop())
+
+// // output the original array and removed arrays
+// console.log(arr1)
+// console.log(poopeditems)
+
+
+
+
+
+ const removeLastWord = (s)=>{
+         let  trimmedString =  s.trim()
+         let  slplitedstring = trimmedString.split(" ")
+         let  popeditems = slplitedstring.pop()
+        if(popeditems.length > 0){
+            return popeditems.length
         }
-        else{
-            return false
+        else {
+            return 0;
         }
-}
-}
-//correction
-console.log(checkAnagrams("atea","eeat"));
+    }
+
+    console.log(removeLastWord("my matrix with spaces aaa hhhu"));
 
 
+
+// var param = 'size' ;
+// var config = {
+//     [param] : 12
+//     [ 'mobile' + param.charAt(0).toUpperCase() + param.slice(1) : 4
+
+
+//     ]
+// }
+
+
+// let newArr = [2,4,"car","bike",7,'tesla']
+// let remARR = newArr.splice(2,2)
+// console.log (remARR)
+
+// console.log('----------removed-----');
+// let addarr = newArr.splice(2,0,"toyota","ram")
+// console.log(newArr);
+
+
+
+
+// //Sorting
+// let numArr2 = [89,9,56,1,45,102,6,7,0,45,66]
+// function sortFunc(a,b){
+//     return a-b
+// }
+
+// find the highest third Number
+// const thirdhighest = function(arr){
+//     let sortedarr = arr.sort(function(a,b){
+//              return a-b
+//     }
+//            return 
+//         )
+// }
+
+// let flower = ['hibicus' , 'sunflower', 'lilly']
+//    let mappedFlower = flower.map (function(item,i,arry){
+//        return item[0].toUpperCase
+//    })
+ 
+// console.log(flower);
+
+// function sotFunc(a,b){
+//     return b-a
+// }
+// console.log(numArr2.sort(sortFunc));
+// console.log(numArr2.sort(sotFunc));
 
